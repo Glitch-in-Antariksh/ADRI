@@ -12,7 +12,7 @@ export default function Home() {
 
         <div className="flex gap-6 text-sm">
 
-          <Link href="/About">
+          <Link href="/about">
             About
           </Link>
           <Link href="/research">

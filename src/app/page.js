@@ -33,7 +33,7 @@ export default function Home() {
 
 <h1 className="text-6xl font-bold mb-6">
   ADRI
-</h1>
+</h1> 
 
 <p className="text-gray-400 text-xl max-w-2xl mb-8">
   Atreus Defence Research and Innovation

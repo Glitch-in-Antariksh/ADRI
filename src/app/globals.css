@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes radarRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.radar-sweep {
+  position: absolute;
+
+  width: 950px;
+  height: 1490px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 9999px;
+
+  background: conic-gradient(
+  from 0deg,
+  rgba(34, 211, 238, 0.25),
+  rgba(34, 211, 238, 0.12),
+  rgba(34, 211, 238, 0.04),
+  transparent 30deg,
+  transparent 360deg
+);
+
+  animation: radarRotate 12s linear infinite;
+
+  pointer-events: none;
+}

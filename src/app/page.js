@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 export default function Home() {
   const rings = [];
 
@@ -130,10 +131,8 @@ const colors = [
 </p>
 
 
-<Button text="Explore Projects" />
-
       </section>
-
+    <Footer />
     </main>
   );
 }

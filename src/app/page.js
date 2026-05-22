@@ -2,11 +2,10 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 export default function Home() {
-  const rings = [];
-
+  
+const rings = [];
 let radius = 1500;
 let gap = 25;
-
 for (let i = 0; i < 22; i++) {
   rings.push(radius);
 
@@ -15,11 +14,18 @@ for (let i = 0; i < 22; i++) {
   gap += 5;
 }
 
+const stars = Array.from({ length: 40 }, (_, i) => ({
+  id: i,
+  top: Math.random() * 100,
+  left: Math.random() * 100,
+}));
+
 const colors = [
   "border-cyan-400/20",
   "border-blue-400/20",
   "border-purple-400/20",
 ];
+
   return (
     <main className="bg-black text-white min-h-screen">
 
@@ -61,6 +67,25 @@ const colors = [
     px-6
   "
 >
+   {stars.map((star) => (
+    <div
+      key={star.id}
+      className="
+        star 
+        absolute
+        w-[3px]
+        h-[4px]
+        rounded-full
+        bg-white
+        opacity-70
+        shadow-[0_0_8px_white]
+      "
+      style={{
+        top: `${star.top}%`,
+        left: `${star.left}%`,
+      }}
+    />
+  ))}
 
     <div className="relative mb-16 flex items-center justify-center">
 
@@ -129,9 +154,8 @@ const colors = [
 <p className="text-gray-400 text-xl max-w-2xl mb-8">
   Building next-generation autonomous defence systems and intelligent battlefield technologies.
 </p>
-
-
       </section>
+
     <Footer />
     </main>
   );

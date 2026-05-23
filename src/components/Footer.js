@@ -12,6 +12,8 @@ export default function Footer() {
           Building autonomous systems, intelligent
           battlefield technologies, and next-generation
           engineering solutions.
+
+          CONTACT US: +91 831 070 8778
         </p>
 
         <div className="flex gap-8 text-gray-300 mb-10">

@@ -241,7 +241,7 @@ export default function Team() {
           Amee Singh
         </h3>
         <p className="text-gray-400 text-sm">
-          Software & AI Systems Lead
+          Software & AI Systems Engineer
         </p>
       </div>
 

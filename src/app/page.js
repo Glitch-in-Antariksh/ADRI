@@ -1,8 +1,9 @@
 import Button from "@/components/Button";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import HomeButton from "@/components/HomeButton";
 export default function Home() {
-  
+
 const rings = [];
 let radius = 1500;
 let gap = 25;

@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import HomeButton from "@/components/HomeButton";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,13 +22,18 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+      <body className="min-h-full flex flex-col">
 
+        <HomeButton />
+
+        {children}
+
+      </body>
+    </html>
   );
 }
 
 import "./globals.css";
-import HomeButton from "@/components/HomeButton";
+
 
 

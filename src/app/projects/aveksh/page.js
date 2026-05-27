@@ -7,6 +7,8 @@ export default function Aveksh() {
       </h1>
 
       <p className="text-gray-400 text-xl">
+        Autonomous Visual Evaluation & Knowledge-based Surveillance Hub. 
+        Observe. Understand. Anticipate.
         Project currently in development.
         System architecture and technical details
         will be published in upcoming updates.
